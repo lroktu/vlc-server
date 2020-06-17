@@ -10,13 +10,13 @@ This VLC image can be found at:
 
 ## Image Pull
 
-```
+```bash
 docker pull lroktu/vlc-server:latest
 ```
 
 ## Running the Image
 
-```
+```bash
 docker run -d --name YOUR_CONTAINER_NAME lroktu/vlc-server YOUR_CVLC_ARGUMENTS
 ```
 
@@ -31,7 +31,7 @@ There are three ports being exposed on the Dockerfile:
 
 ## VLC server
 
-```
+```bash
 docker run -d --name vlc -p 8554:8554 lroktu/vlc-server big_buck_bunny.mp4 --loop :sout=#gather:rtp{sdp=rtsp://:8554/} :network-caching=1500 :sout-all :sout-keep
 ```
 
@@ -50,7 +50,7 @@ In this example, the video is started using the **RTSP** protocol and port **855
 
 On another or on the same host, run the command below
 
-```
+```bash
 vlc rtsp://@CONTAINER_HOST_IP:8554/
 
 ```
