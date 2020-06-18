@@ -1,0 +1,12 @@
+version: "3"
+services:
+        vlc:
+                image: lroktu/vlc-server
+                ports: 
+                    - 8554:8554
+                networks:
+                    - vlc-server
+                command:
+                        big_buck_bunny.mp4 --loop :sout=#gather:rtp{sdp=rtsp://:8554/} :network-caching=1500 :sout-all :sout-keep
+networks:
+    vlc-server:
