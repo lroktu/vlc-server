@@ -14,6 +14,10 @@ This VLC image can be found at:
 docker pull lroktu/vlc-server:latest
 ```
 
+```bash
+An aleatory edit
+```
+
 ## Running the Image
 
 ```bash
