@@ -4,7 +4,7 @@ Docker container VLC server for video stream.
 VLC media player version 3.0.9.2 Vetinari (revision 3.0.9.2-0-gd4c1aefe4d)
 
 This VLC image can be found at:
-* [Docker Hub](https://hub.docker.com/repository/docker/lroktu/vlc-server)
+* [Docker Hub](https://hub.docker.com/r/lroktu/vlc-server)
 
 # Usage
 
